@@ -1,4 +1,4 @@
-﻿namespace Tests
+namespace Tests
 {
 	using AspNet.Identity.MongoDB;
 	using MongoDB.Bson;
@@ -35,7 +35,7 @@
 
 			var role = new IdentityRole(name);
 
-			Expect(role.Name, Is.EqualTo(name));
+			Expect(role.Name, Is.EqualTo(“notadmin”));
 		}
 
 		[Test]
